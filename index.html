@@ -1,10 +1,40 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    
+    <div class="scene">
+      <div class="dice">
+        <div class="dice-side dice-side-one">one</div>
+        <div class="dice-side dice-side-six">six</div>
+        <div class="dice-side dice-side-four">four</div>
+        <div class="dice-side dice-side-three">three</div>
+        <div class="dice-side dice-side-two">two</div>
+        <div class="dice-side dice-side-five">five</div>
+      </div>
+    </div>
+    <p class="radio-group">
+      <label>
+        <input type="radio" name="rotate-cube-side" value="one" checked />
+        one
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="two" /> two
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="three" /> three
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="four" /> four
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="five" /> five
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="six" /> six
+      </label>
+    </p>
+    <script src="script.js"></script>
   </body>
 </html>

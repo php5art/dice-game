@@ -1,2 +1,115 @@
 body {
+  font-family: sans-serif;
+}
+
+.scene {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin: 80px;
+  perspective: 300px;
+}
+
+.dice {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+  transition: transform 1s;
+}
+
+.dice.show-one {
+  transform: translateZ(-50px) rotateY(0deg);
+}
+.dice.show-six {
+  transform: translateZ(-50px) rotateY(-30deg);
+}
+.dice.show-four {
+  transform: translateZ(-150px) rotateY(-90deg);
+}
+.dice.show-three {
+  transform: translateZ(-150px) rotateY(90deg);
+}
+.dice.show-two {
+  transform: translateZ(-100px) rotateX(-90deg);
+}
+.dice.show-five {
+  transform: translateZ(-100px) rotateX(90deg);
+}
+
+.dice-side {
+  position: absolute;
+  border: 2px solid black;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.dice-side-one,
+.dice-side-six {
+  width: 300px;
+  height: 200px;
+  line-height: 200px;
+}
+
+.dice-side-four,
+.dice-side-three {
+  width: 100px;
+  height: 200px;
+  left: 100px;
+  line-height: 200px;
+}
+
+.dice-side-two,
+.dice-side-five {
+  width: 300px;
+  height: 100px;
+  top: 50px;
+  line-height: 100px;
+}
+
+.dice-side-one {
+  background: hsla(0, 100%, 50%, 0.7);
+}
+.dice-side-four {
+  background: hsla(60, 100%, 50%, 0.7);
+}
+.dice-side-six {
+  background: hsla(120, 100%, 50%, 0.7);
+}
+.dice-side-three {
+  background: hsla(180, 100%, 50%, 0.7);
+}
+.dice-side-two {
+  background: hsla(240, 100%, 50%, 0.7);
+}
+.dice-side-five {
+  background: hsla(300, 100%, 50%, 0.7);
+}
+
+.dice-side-one {
+  transform: rotateY(0deg) translateZ(50px);
+}
+.dice-side-six {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.dice-side-four {
+  transform: rotateY(90deg) translateZ(150px);
+}
+.dice-side-three {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+
+.dice-side-two {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.dice-side-five {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+label {
+  margin-right: 10px;
 }
