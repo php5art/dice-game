@@ -45,6 +45,21 @@ body {
   font-weight: bold;
   color: white;
   text-align: center;
+  background: -webkit-linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(240, 214, 228) 100%
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(240, 214, 228) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgb(255, 255, 255),
+    rgb(240, 214, 228) 100%
+  );
 }
 
 .dice-side-one,
@@ -68,7 +83,7 @@ body {
   line-height: 100px;
 }
 
-.dice-side-one {
+/* .dice-side-one {
   background: hsla(0, 100%, 50%, 0.7);
 }
 .dice-side-four {
@@ -85,7 +100,7 @@ body {
 }
 .dice-side-five {
   background: hsla(300, 100%, 50%, 0.7);
-}
+} */
 
 .dice-side-one {
   transform: rotateY(0deg) translateZ(50px);
@@ -110,4 +125,47 @@ body {
 
 label {
   margin-right: 10px;
+}
+
+.dice-point {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.dice-point-left-top {
+  left: 10px;
+  top: 10px;
+}
+
+.dice-point-right-top {
+  right: 10px;
+  top: 10px;
+}
+
+.dice-point-left-middle {
+  left: 10px;
+  top: 40px;
+}
+
+.dice-point-center {
+  left: 40px;
+  top: 40px;
+}
+
+.dice-point-right-middle {
+  right: 10px;
+  top: 40px;
+}
+
+.dice-point-left-bottom {
+  left: 10px;
+  bottom: 10px;
+}
+
+.dice-point-right-bottom {
+  right: 10px;
+  bottom: 10px;
 }
