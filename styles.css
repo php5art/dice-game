@@ -3,19 +3,19 @@ body {
 }
 
 .scene {
-  width: 300px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border: 1px solid #ccc;
   margin: 80px;
   perspective: 300px;
 }
 
 .dice {
-  width: 300px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(-50px);
+  transform: translateZ(-25px);
   transition: transform 1s;
 }
 
@@ -23,19 +23,19 @@ body {
   transform: translateZ(-50px) rotateY(0deg);
 }
 .dice.show-six {
-  transform: translateZ(-50px) rotateY(-30deg);
+  transform: translateZ(-50px) rotateY(-180deg);
 }
 .dice.show-four {
-  transform: translateZ(-150px) rotateY(-90deg);
+  transform: translateZ(-50px) rotateY(-90deg);
 }
 .dice.show-three {
-  transform: translateZ(-150px) rotateY(90deg);
+  transform: translateZ(-50px) rotateY(90deg);
 }
 .dice.show-two {
-  transform: translateZ(-100px) rotateX(-90deg);
+  transform: translateZ(-50px) rotateX(-90deg);
 }
 .dice.show-five {
-  transform: translateZ(-100px) rotateX(90deg);
+  transform: translateZ(-50px) rotateX(90deg);
 }
 
 .dice-side {
@@ -49,24 +49,22 @@ body {
 
 .dice-side-one,
 .dice-side-six {
-  width: 300px;
-  height: 200px;
-  line-height: 200px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
 }
 
 .dice-side-four,
 .dice-side-three {
   width: 100px;
-  height: 200px;
-  left: 100px;
-  line-height: 200px;
+  height: 100px;
+  line-height: 100px;
 }
 
 .dice-side-two,
 .dice-side-five {
-  width: 300px;
+  width: 100px;
   height: 100px;
-  top: 50px;
   line-height: 100px;
 }
 
@@ -97,17 +95,17 @@ body {
 }
 
 .dice-side-four {
-  transform: rotateY(90deg) translateZ(150px);
+  transform: rotateY(90deg) translateZ(50px);
 }
 .dice-side-three {
-  transform: rotateY(-90deg) translateZ(150px);
+  transform: rotateY(-90deg) translateZ(50px);
 }
 
 .dice-side-two {
-  transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(50px);
 }
 .dice-side-five {
-  transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(50px);
 }
 
 label {
